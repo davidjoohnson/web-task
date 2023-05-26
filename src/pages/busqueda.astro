@@ -1,35 +1,69 @@
 ---
-import 'animate.css';
+import "animate.css";
 ---
+
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/icons8-logo.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="stylesheet" type="text/css" href="styles.css" />
-		<link rel="stylesheet" type="text/css" href="styles-header.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-		<title>CV David</title>
-	</head>
-	<body>
-		<header>
-			<nav>
-				<ul>
-					<li><a href="/">Página Principal</a></li>
-					<li><a href="/sobremi">Sobre mi</a></li>
-					<li><a href="/formacion">Formación</a></li>
-					<li><a href="/experiencia">Experiencia profesional</a></li>
-					<li><a href="/idiomas">Idiomas</a></li>
-					<li><a href="/programas">Programas</a></li>
-					<li><a href="/contacto">Contacto</a></li>
-					<li><a href="/busqueda">Search</a></li>
-				</ul>
-			</nav>
-		</header>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/icons8-logo.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link rel="stylesheet" type="text/css" href="styles-header.css" />
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link rel="stylesheet" type="text/css" href="button_style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <title>CV David</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="/">Página Principal</a></li>
+                    <li><a href="/sobremi">Sobre mi</a></li>
+                    <li><a href="/formacion">Formación</a></li>
+                    <li><a href="/experiencia">Experiencia profesional</a></li>
+                    <li><a href="/idiomas">Idiomas</a></li>
+                    <li><a href="/programas">Programas</a></li>
+                    <li><a href="/contacto">Contacto</a></li>
+                    <li><a href="/busqueda">Words List</a></li>
+                </ul>
+            </nav>
+        </header>
         <div class="back-img">
-            <div class="container">
-				<h1 class="title2"><a class="animate__animated animate__fadeIn">Search</a></h1>
+            <div class="container2">
+                <h1 class="title2">
+                    <a class="animate__animated animate__fadeIn">Words List</a>
+                </h1>
+                <!--  Input and "add" button  -->
+                <input
+                    class="submission-line__input"
+                    type="text"
+                    maxlength="20"
+                    placeholder="Añade aqui tu palabra..."
+                />
+                <button class="submission-line__btn">Añadir</button>
+                <!--  List, list items, and list item buttons  -->
+                <ul class="list">
+                    <li class="list__item">
+                        <a class="list__delete-btn">X</a>Creativo<a
+                            class="list__check-btn">✔</a>
+                    </li>
+                    <li class="list__item">
+                        <a class="list__delete-btn">X</a>Participativo<a
+                            class="list__check-btn">✔</a>
+                    </li>
+                    <li class="list__item list__item--checked">
+                        <a class="list__delete-btn list__delete-btn--checked"
+                            >X</a
+                        >Colaborativo<a
+                            class="list__check-btn list__check-btn--checked"
+                            >✔</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </body>
