@@ -3,7 +3,7 @@
 ```
 npm create astro@latest -- --template minimal
 ```
-[Open my Website]](https://web-task-rose.vercel.app/)
+[![Open my Website]](https://web-task-rose.vercel.app/)
 
 
 
