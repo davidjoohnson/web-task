@@ -1,27 +1,16 @@
-/*
-class StarRating{
-    constructor(qs) {
-        this.ratings = [
-            {id: 1, name: "Terrible"},
-            {id: 2, name: "Bad"},
-            {id: 3, name: "OK"},
-            {id: 4, name: "Good"},
-            {id: 5, name: "Excellent"}
-        ];
-        this.rating = null;
-        this.el = document.querySelector(qs);
+function actualizarReloj() {
+    var fecha = new Date();
+    var hora = formatoDosDigitos(fecha.getHours());
+    var minutos = formatoDosDigitos(fecha.getMinutes());
+    var segundos = formatoDosDigitos(fecha.getSeconds());
 
-        this.init();
-    }
+    document.getElementById("hora").textContent = hora;
+    document.getElementById("minutos").textContent = minutos;
+    document.getElementById("segundos").textContent = segundos;
 }
-*/
 
-let num = 1;
-let notes = document.querySelector('#notes');
+function formatoDosDigitos(valor) {
+    return valor < 10 ? "0" + valor : valor;
+}
 
-let p = document.createElement('p');
-p.textContent = `This is paragraph ${num}`;
-num++;
-
-notes.appendChild(p);
-
+setInterval(actualizarReloj, 1000);

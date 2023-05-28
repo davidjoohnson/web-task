@@ -1,0 +1,24 @@
+.reloj {
+    font-family: Arial, sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+}
+
+span {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+span:before {
+    content: ":";
+}
+.cuadro2{
+    flex-basis: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
